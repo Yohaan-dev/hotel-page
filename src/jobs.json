@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "images": {
+      "testimonyImage1": "/pictures/pexels-thorsten-technoman-109353-338504.jpg"
+    },
+    "title": "Will(Bill) Traversy",
+    "type": "Expat Explorer Traveler",
+    "description": "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."
+  },
+  {
+    "id": "2",
+    "images": {
+      "testimonyImage1": "/pictures/pexels-pixabay-258154.jpg"
+    },
+    "title": "Cara PritChard",
+    "type": "Expat Explorer Traveler",
+    "description": "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
+  },
+  {
+    "id": "3",
+    "images": {
+      "testimonyImage1": "/pictures/pexels-enginakyurt-1579253.jpg"
+    },
+    "title": "Logan Presnel",
+    "type": "Expat Explorer Traveler",
+    "description": "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."
+  }
+]
