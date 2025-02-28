@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-const Testimonies = ({job, image, index}) => {
+const Testimonies = ({job}) => {
     const [showFullDescription, setShowFullDescription] = useState(false)
 
   let description = job.description;
@@ -13,14 +13,6 @@ const Testimonies = ({job, image, index}) => {
     <div
     className="flex flex-col bg-gray-600 p-4 rounded-lg shadow-md space-y-4 w-full md:w-80"
   >
-    {/* Image Container */}
-    <div className="flex justify-center">
-      <img
-        className="w-32 h-32 rounded-full object-cover"
-        src={image} // Use the image variable
-        alt={`Job Image ${index + 1}`}
-      />
-    </div>
     
     {/* Title & Type */}
     <div className="text-center">
@@ -34,7 +26,10 @@ const Testimonies = ({job, image, index}) => {
           </p>
           
           {/* onClick Button Showing Full Description */}
-          <button onClick={()=> setShowFullDescription((prevState)=> !prevState)} className="bg-blue-900 text-white rounded-lg px-3 p-2 focus:outline-none cursor-pointer hover:bg-blue-400">{showFullDescription ? 'Less':'More'}</button>
+      <button onClick={() => setShowFullDescription((prevState) => !prevState)} className="text-blue-200 focus:outline-none hover:text-blue-400">{showFullDescription ? 'Less' : 'More'}</button>
+      
+      {/* Read More */}
+      <a href={`/about/${job.id}`} className="bg-blue-600 text-white px-4 p-2 rounded-lg focus:outline-none text-center hover:bg-blue-900 hover:text-white">Read More</a>
   </div>
   )
 }
